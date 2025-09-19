@@ -27,6 +27,14 @@ class NotesController extends Controller
     }
 
     /**
+     * Display the specified resource.
+     */
+    public function show(Note $note)
+    {
+        return view('notes.show', compact('note'));
+    }
+
+    /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
